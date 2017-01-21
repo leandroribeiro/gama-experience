@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bem vindo ao NetShow.Me blog</h2>
+
+
+@model List<Vegetais.Blog.Web.Controllers.PostViewModel>
+
+<div>
+    @foreach (var post in Model)
+    {
+        <a href="@post.Link">
+
+            @if (!String.IsNullOrEmpty(@post.Imagem))
+            {
+                <img src="@post.Imagem" />
+            }
+
+
+            <h3>@post.Titulo</h3>
+
+            @if (!String.IsNullOrEmpty(@post.Video))
+            {
+                @Html.Raw(@post.Video)
+            }
+        </a>
+    }
+</div>
