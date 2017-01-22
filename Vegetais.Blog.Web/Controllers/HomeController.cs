@@ -16,7 +16,7 @@ namespace Vegetais.Blog.Web.Controllers
 
             var artigos = db.ArtigoSet
                 .ToList()
-                .Select(x => new ArtigoViewModel(x.Titulo, x.Imagem, x.Video, ""))
+                .Select(x => new ArtigoViewModel(x.Titulo, x.Conteudo, x.Imagem, x.Video, x.Permalink))
                 .ToList();
 
             return View(artigos);

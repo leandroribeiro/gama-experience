@@ -12,19 +12,19 @@
     @foreach (var artigo in Model)
     {
         <a href="@artigo.Link">
-
-            @if (!String.IsNullOrEmpty(artigo.Imagem))
-            {
-                <img src="@artigo.Imagem" />
-            }
-
-
             <h3>@artigo.Titulo</h3>
-
-            @if (!String.IsNullOrEmpty(artigo.Video))
-            {
-                @Html.Raw(artigo.Video)
-            }
         </a>
+
+        if (!String.IsNullOrEmpty(artigo.Imagem))
+        {
+            <img src="@artigo.Imagem" />
+        }
+
+        if (!String.IsNullOrEmpty(artigo.Video))
+        {
+            @Html.Raw(artigo.Video)
+        }
+
+        @Html.Raw(artigo.Conteudo)
     }
 </div>

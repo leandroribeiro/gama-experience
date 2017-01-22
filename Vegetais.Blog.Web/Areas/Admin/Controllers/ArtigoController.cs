@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Vegetais.Blog.Infrastructure;
 using Vegetais.Blog.Web;
 
 namespace Vegetais.Blog.Web.Areas.Admin.Controllers
@@ -46,8 +47,10 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Artigo post)
+        public ActionResult Create([Bind(Include = "Id,Titulo,Conteudo,Imagem,Video")] Artigo post)
         {
+            post.Permalink = MyHTMLHelper.ConvertoToUrl(post.Titulo);
+
             if (ModelState.IsValid)
             {
                 db.ArtigoSet.Add(post);
@@ -78,8 +81,10 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Artigo post)
+        public ActionResult Edit([Bind(Include = "Id,Titulo,Conteudo,Imagem,Video")] Artigo post)
         {
+            post.Permalink = MyHTMLHelper.ConvertoToUrl(post.Titulo);
+
             if (ModelState.IsValid)
             {
                 db.Entry(post).State = EntityState.Modified;
