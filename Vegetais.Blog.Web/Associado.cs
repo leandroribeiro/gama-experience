@@ -17,5 +17,7 @@ namespace Vegetais.Blog.Web
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
+        public string IP { get; set; }
+        public string HoraCadastro { get; set; }
     }
 }

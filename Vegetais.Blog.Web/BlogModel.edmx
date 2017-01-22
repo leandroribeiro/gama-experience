@@ -26,6 +26,8 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IP" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HoraCadastro" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -52,8 +54,8 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nome" Type="String" Nullable="false" />
           <Property Name="Email" Type="String" Nullable="false" />
-          <Property Name="ip" Type="String" Nullable="false" />
-          <Property Name="horaCadastro" Type="String" Nullable="false" />
+          <Property Name="IP" Type="String" Nullable="false" />
+          <Property Name="HoraCadastro" Type="String" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -78,6 +80,8 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Nome" ColumnName="Nome" />
           <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="HoraCadastro" ColumnName="HoraCadastro" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

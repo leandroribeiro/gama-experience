@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/21/2017 17:23:32
--- Generated from EDMX file: Y:\Projects\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
+-- Date Created: 01/22/2017 16:57:49
+-- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -22,6 +22,12 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[PostSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[PostSet];
+GO
+IF OBJECT_ID(N'[dbo].[AssociadoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[AssociadoSet];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
@@ -41,7 +47,9 @@ GO
 CREATE TABLE [dbo].[AssociadoSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Nome] nvarchar(max)  NOT NULL,
-    [Email] nvarchar(max)  NOT NULL
+    [Email] nvarchar(max)  NOT NULL,
+    [IP] nvarchar(max)  NOT NULL,
+    [HoraCadastro] nvarchar(max)  NOT NULL
 );
 GO
 
