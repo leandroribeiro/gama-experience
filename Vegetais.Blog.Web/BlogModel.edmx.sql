@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/22/2017 17:14:10
+-- Date Created: 01/22/2017 18:57:53
 -- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
@@ -33,13 +33,15 @@ GO
 -- Creating all tables
 -- --------------------------------------------------
 
--- Creating table 'PostSet'
-CREATE TABLE [dbo].[PostSet] (
+-- Creating table 'ArtigoSet'
+CREATE TABLE [dbo].[ArtigoSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Titulo] nvarchar(max)  NOT NULL,
     [Imagem] nvarchar(max)  NULL,
     [Video] nvarchar(max)  NULL,
-    [Link] nvarchar(max)  NOT NULL
+    [Conteudo] nvarchar(max)  NOT NULL,
+    [Permalink] nvarchar(max)  NOT NULL,
+    [SoParaAssinantes] bit  NOT NULL
 );
 GO
 
@@ -57,9 +59,9 @@ GO
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
--- Creating primary key on [Id] in table 'PostSet'
-ALTER TABLE [dbo].[PostSet]
-ADD CONSTRAINT [PK_PostSet]
+-- Creating primary key on [Id] in table 'ArtigoSet'
+ALTER TABLE [dbo].[ArtigoSet]
+ADD CONSTRAINT [PK_ArtigoSet]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
