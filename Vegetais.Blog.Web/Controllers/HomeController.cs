@@ -14,12 +14,12 @@ namespace Vegetais.Blog.Web.Controllers
         {
             var db = new BlogModelContainer();
 
-            var posts = db.ArtigoSet
+            var artigos = db.ArtigoSet
                 .ToList()
-                .Select(x => new PostViewModel(x.Titulo, x.Imagem, x.Video, ""))
+                .Select(x => new ArtigoViewModel(x.Titulo, x.Imagem, x.Video, ""))
                 .ToList();
 
-            return View(posts);
+            return View(artigos);
         }
 
     }

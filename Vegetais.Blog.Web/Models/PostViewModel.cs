@@ -1,8 +1,8 @@
 namespace Vegetais.Blog.Web.Models
 {
-    public class PostViewModel
+    public class ArtigoViewModel
     {
-        public PostViewModel(string titulo, string imagem, string video, string link)
+        public ArtigoViewModel(string titulo, string imagem, string video, string link)
         {
             this.Titulo = titulo;
             this.Imagem = imagem;

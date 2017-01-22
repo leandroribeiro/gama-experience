@@ -6,24 +6,24 @@
 <h2>Bem vindo ao NetShow.Me blog</h2>
 
 
-@model List<Vegetais.Blog.Web.Models.PostViewModel>
+@model List<Vegetais.Blog.Web.Models.ArtigoViewModel>
 
 <div>
-    @foreach (var post in Model)
+    @foreach (var artigo in Model)
     {
-        <a href="@post.Link">
+        <a href="@artigo.Link">
 
-            @if (!String.IsNullOrEmpty(@post.Imagem))
+            @if (!String.IsNullOrEmpty(artigo.Imagem))
             {
-                <img src="@post.Imagem" />
+                <img src="@artigo.Imagem" />
             }
 
 
-            <h3>@post.Titulo</h3>
+            <h3>@artigo.Titulo</h3>
 
-            @if (!String.IsNullOrEmpty(@post.Video))
+            @if (!String.IsNullOrEmpty(artigo.Video))
             {
-                @Html.Raw(@post.Video)
+                @Html.Raw(artigo.Video)
             }
         </a>
     }
