@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/22/2017 16:57:49
+-- Date Created: 01/22/2017 17:14:10
 -- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
@@ -37,8 +37,8 @@ GO
 CREATE TABLE [dbo].[PostSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Titulo] nvarchar(max)  NOT NULL,
-    [Imagem] nvarchar(max)  NOT NULL,
-    [Video] nvarchar(max)  NOT NULL,
+    [Imagem] nvarchar(max)  NULL,
+    [Video] nvarchar(max)  NULL,
     [Link] nvarchar(max)  NOT NULL
 );
 GO

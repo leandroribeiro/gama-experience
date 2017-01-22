@@ -18,6 +18,5 @@ namespace Vegetais.Blog.Web
         public string Titulo { get; set; }
         public string Imagem { get; set; }
         public string Video { get; set; }
-        public string Link { get; set; }
     }
 }

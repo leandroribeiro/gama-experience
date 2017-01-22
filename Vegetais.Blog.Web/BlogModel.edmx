@@ -15,9 +15,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Titulo" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Imagem" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Video" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Link" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Imagem" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Video" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <EntityType Name="AssociadoSet">
     <Key>
@@ -43,9 +42,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Titulo" Type="String" Nullable="false" />
-          <Property Name="Imagem" Type="String" Nullable="false" />
-          <Property Name="Video" Type="String" Nullable="false" />
-          <Property Name="Link" Type="String" Nullable="false" />
+          <Property Name="Imagem" Type="String" />
+          <Property Name="Video" Type="String" />
         </EntityType>
         <EntityType Name="Associado">
           <Key>
@@ -70,7 +68,6 @@
           <ScalarProperty Name="Titulo" ColumnName="Titulo" />
           <ScalarProperty Name="Imagem" ColumnName="Imagem" />
           <ScalarProperty Name="Video" ColumnName="Video" />
-          <ScalarProperty Name="Link" ColumnName="Link" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
