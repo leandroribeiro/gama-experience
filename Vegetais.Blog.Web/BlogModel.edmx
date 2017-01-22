@@ -33,10 +33,10 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="BlogModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="BlogModelContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="PostSet" EntityType="BlogModel.Post" />
+          <EntitySet Name="ArtigoSet" EntityType="BlogModel.Artigo" />
           <EntitySet Name="AssociadoSet" EntityType="BlogModel.Associado" />
         </EntityContainer>
-        <EntityType Name="Post">
+        <EntityType Name="Artigo">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -44,6 +44,9 @@
           <Property Name="Titulo" Type="String" Nullable="false" />
           <Property Name="Imagem" Type="String" />
           <Property Name="Video" Type="String" />
+          <Property Name="Conteudo" Type="String" Nullable="false" />
+          <Property Name="Permalink" Type="String" Nullable="false" />
+          <Property Name="SoParaAssinantes" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Associado">
           <Key>
@@ -61,8 +64,8 @@
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogModelContainer">
-    <EntitySetMapping Name="PostSet">
-      <EntityTypeMapping TypeName="IsTypeOf(BlogModel.Post)">
+    <EntitySetMapping Name="ArtigoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BlogModel.Artigo)">
         <MappingFragment StoreEntitySet="PostSet">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Titulo" ColumnName="Titulo" />

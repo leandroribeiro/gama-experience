@@ -10,14 +10,14 @@ using Vegetais.Blog.Web;
 
 namespace Vegetais.Blog.Web.Areas.Admin.Controllers
 {
-    public class PostController : Controller
+    public class ArtigoController : Controller
     {
         private BlogModelContainer db = new BlogModelContainer();
 
         // GET: Admin/Post
         public ActionResult Index()
         {
-            return View(db.PostSet.ToList());
+            return View(db.ArtigoSet.ToList());
         }
 
         // GET: Admin/Post/Details/5
@@ -27,12 +27,12 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Post post = db.PostSet.Find(id);
-            if (post == null)
+            Artigo artigo = db.ArtigoSet.Find(id);
+            if (artigo == null)
             {
                 return HttpNotFound();
             }
-            return View(post);
+            return View(artigo);
         }
 
         // GET: Admin/Post/Create
@@ -46,11 +46,11 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Post post)
+        public ActionResult Create([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Artigo post)
         {
             if (ModelState.IsValid)
             {
-                db.PostSet.Add(post);
+                db.ArtigoSet.Add(post);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,12 +65,12 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Post post = db.PostSet.Find(id);
-            if (post == null)
+            Artigo artigo = db.ArtigoSet.Find(id);
+            if (artigo == null)
             {
                 return HttpNotFound();
             }
-            return View(post);
+            return View(artigo);
         }
 
         // POST: Admin/Post/Edit/5
@@ -78,7 +78,7 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Post post)
+        public ActionResult Edit([Bind(Include = "Id,Titulo,Imagem,Video,Link")] Artigo post)
         {
             if (ModelState.IsValid)
             {
@@ -96,12 +96,12 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Post post = db.PostSet.Find(id);
-            if (post == null)
+            Artigo artigo = db.ArtigoSet.Find(id);
+            if (artigo == null)
             {
                 return HttpNotFound();
             }
-            return View(post);
+            return View(artigo);
         }
 
         // POST: Admin/Post/Delete/5
@@ -109,8 +109,8 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Post post = db.PostSet.Find(id);
-            db.PostSet.Remove(post);
+            Artigo artigo = db.ArtigoSet.Find(id);
+            db.ArtigoSet.Remove(artigo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

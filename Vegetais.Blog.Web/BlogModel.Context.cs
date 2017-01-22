@@ -25,7 +25,7 @@ namespace Vegetais.Blog.Web
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Post> PostSet { get; set; }
+        public virtual DbSet<Artigo> ArtigoSet { get; set; }
         public virtual DbSet<Associado> AssociadoSet { get; set; }
     }
 }

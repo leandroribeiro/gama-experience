@@ -14,7 +14,7 @@ namespace Vegetais.Blog.Web.Controllers
         {
             var db = new BlogModelContainer();
 
-            var posts = db.PostSet
+            var posts = db.ArtigoSet
                 .ToList()
                 .Select(x => new PostViewModel(x.Titulo, x.Imagem, x.Video, ""))
                 .ToList();

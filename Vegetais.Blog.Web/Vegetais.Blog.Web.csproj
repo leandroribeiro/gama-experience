@@ -169,7 +169,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArtigoController.cs" />
+    <Compile Include="Artigo.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Associado.cs">
       <DependentUpon>BlogModel.tt</DependentUpon>
     </Compile>
@@ -193,9 +196,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\PostViewModel.cs" />
-    <Compile Include="Post.cs">
-      <DependentUpon>BlogModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -230,11 +230,11 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Post\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Post\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Post\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Post\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Artigo\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Artigo\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Artigo\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Artigo\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Artigo\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
