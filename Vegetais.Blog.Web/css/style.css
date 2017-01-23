@@ -124,7 +124,7 @@ label{
 .search input[type="text"]{
     width: 80%;
     outline: none;
-    padding: 0em 0.6em;
+    padding: 10em 0.6em;
     font-size: 1em;
     color: #333333;
     position: relative;
@@ -539,6 +539,7 @@ min-height: 300px;
 }
 .technology-1 {
     margin: 2em 0;
+    
 }
 .vide {
     padding: 2em;
@@ -580,7 +581,7 @@ min-height: 300px;
 }
 /*--business--*/
 .business {
-    padding: 2em 2em 1.8em;
+     padding: 10em;
     background: #fff;
 }
 .business li {
@@ -909,6 +910,7 @@ ul.nav.navbar-nav li a {
 .technology-right {
     width: 30%;
     float: right;
+    margin: 2em;
 }
 .tc-ch {
     float: left;
@@ -916,7 +918,7 @@ ul.nav.navbar-nav li a {
     padding:1em;
 }
 .tech-btm {
-    padding: 1em;
+    padding: 10em;
 }
 .tech-btm h4 {
     text-align: center;
@@ -1051,6 +1053,7 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 }
 .technology-left {
     width: 100%;
+    padding: 10em;
 }
 .technology-right {
     width: 100%;
