@@ -264,6 +264,8 @@
     <Content Include="Areas\Admin\Views\Artigo\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Artigo\Index.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\vegetais - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\vegetais - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
