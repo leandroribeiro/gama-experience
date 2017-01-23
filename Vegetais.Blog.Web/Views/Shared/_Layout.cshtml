@@ -20,7 +20,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="logo">
-                    <a href="@Url.Action("Index")"><img src="@Url.Content("~/images/logo_uvideo_pequeno.png")" class="logo-home" title="Logotipo uvideo" alt="Logotipo uvídeo" /></a>
+                    <a href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/images/logo_uvideo_pequeno.png")" class="logo-home" title="Logotipo uvideo" alt="Logotipo uvídeo" /></a>
                 </div>
                 <div class="search">
                     <form>
@@ -67,12 +67,12 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="@Url.Action("Index")">Home</a></li>
-                        <li><a href="@Url.Action("Sobre")">Sobre</a></li>
-                        <li><a href="@Url.Action("Materiais")">Materiais</a></li>
-                        <li><a href="@Url.Action("Cadastro")">Cadastro</a></li>
+                        <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Sobre", "Home")">Sobre</a></li>
+                        <li><a href="@Url.Action("Materiais", "Home")">Materiais</a></li>
+                        <li><a href="@Url.Action("Cadastro", "Home")">Cadastro</a></li>
                         <li><a href="@Url.Action("Index", "Home", new { area= "Admin" }, null)">Administrativo *</a></li>
-                        <li><a href="@Url.Action("Contato")">Contato</a></li>
+                        <li><a href="@Url.Action("Contato", "Home")">Contato</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -86,7 +86,7 @@
         <div class="container">
             <h2>Melhore a Comunicação com o Seu Público</h2>
             <p>Aprenda a comunicar-se com o seu público e utilizar os canais de comunicação que tem a disposição para ter mais qualidade, audiencia, transmitir informação e criar relacionamentos.</p>
-            <a href="transmissao.html">Quero Transmitir</a> &nbsp;&nbsp; <a href="indique-um-amigo.html" class="destaque">Indicar um Amigo</a>
+            <a href="@Url.Action("Transmissao", "Home")">Quero Transmitir</a> &nbsp;&nbsp; <a href="@Url.Action("IndicarAmigo", "Home")" class="destaque">Indicar um Amigo</a>
         </div>
     </div>
     <!-- technology -->
