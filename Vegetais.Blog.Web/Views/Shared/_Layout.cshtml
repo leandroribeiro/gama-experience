@@ -80,14 +80,10 @@
         </div>
         <!--head-bottom-->
     </div>
+
     <!-- banner -->
-    <div class="banner">
-        <div class="container">
-            <h2>Melhore a Comunicação com o Seu Público</h2>
-            <p>Aprenda a comunicar-se com o seu público e utilizar os canais de comunicação que tem a disposição para ter mais qualidade, audiencia, transmitir informação e criar relacionamentos.</p>
-            <a href="@Url.Action("Transmissao", "Home")">Quero Transmitir</a> &nbsp;&nbsp; <a href="@Url.Action("IndicarAmigo", "Home")" class="destaque">Indicar um Amigo</a>
-        </div>
-    </div>
+    @RenderSection("banner", required: false)
+
     <!-- technology -->
     <div class="technology">
         <div class="container">
