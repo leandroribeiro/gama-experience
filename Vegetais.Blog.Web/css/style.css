@@ -124,7 +124,7 @@ label{
 .search input[type="text"]{
     width: 80%;
     outline: none;
-    padding: 10em 0.6em;
+    padding: 0em 0.6em;
     font-size: 1em;
     color: #333333;
     position: relative;
@@ -436,7 +436,7 @@ i.glyphicon.glyphicon-plus{
     width: 30%;
 }
 .technology-left{
-    width:70%
+    width:70%;
 }
 .blog-grids {
     border-bottom: 1px dotted #aeaeae;
@@ -637,6 +637,7 @@ min-height: 300px;
 .map iframe {
     width: 100%;
     height: 400px;
+
 }
 .contact-grids h2{
     color: #ed645c;
