@@ -42,14 +42,14 @@
             }
 
 
-            @*<a class="blog blue" href="singlepage.html">Technology</a>*@
+            <a class="blog blue" href="@artigo.CategoriaLink">@artigo.Categoria</a>
             <h3><a href="@artigo.Link">@artigo.Titulo</a></h3>
             @Html.Raw(artigo.Conteudo)
 
             <div class="blog-poast-info">
                 <ul>
-                    <li><i class="glyphicon glyphicon-user"> </i><a class="admin" href="#"> Admin </a></li>
-                    <li><i class="glyphicon glyphicon-calendar"> </i>30-12-2015</li>
+                    <li><i class="glyphicon glyphicon-user"> </i><a class="admin" href="#">@artigo.Autor</a></li>
+                    <li><i class="glyphicon glyphicon-calendar"> </i>@artigo.DataDePublicacao</li>
                     <li><i class="glyphicon glyphicon-comment"> </i><a class="p-blog" href="#">3 Comments </a></li>
                     <li><i class="glyphicon glyphicon-heart"> </i><a class="admin" href="#">5 favourites </a></li>
                     <li><i class="glyphicon glyphicon-eye-open"> </i>1.128 views</li>
