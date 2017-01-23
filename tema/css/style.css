@@ -694,7 +694,7 @@ min-height: 300px;
     font-size:15px;
     }
 .contact-grids input[type="text"] {
-    width: 32%;
+    width: 31.9%;
     float: left;
 }
 .contact-grids input[type="text"]:nth-child(2){
@@ -779,7 +779,6 @@ h4.media-heading {
       -webkit-appearance: none;
 }
 .comment-bottom input[type="submit"] {
-  width: 11%;
   font-size: 1.1em;
   background: #61aadd;
   padding: 0.5em 1em;

@@ -38,6 +38,10 @@
     color: #6e6767;
 }
 
+.design-top {
+    margin-top: 2em;
+}
+
 
 
 /*-- header --*/
@@ -53,10 +57,14 @@ img.logo-home {
 }
 
 
-/*-- homepage --*/
+/*-- páginas --*/
 
 input.email {
     margin-top: 10px;
+}
+
+h3.small-size {
+    font-size: 21px;
 }
 
 
