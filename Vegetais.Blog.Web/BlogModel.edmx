@@ -50,6 +50,9 @@
           <Property Name="Conteudo" Type="String" Nullable="false" />
           <Property Name="Permalink" Type="String" Nullable="false" />
           <Property Name="SoParaAssinantes" Type="Boolean" Nullable="false" />
+          <Property Name="DataDePublicacao" Type="DateTime" Nullable="false" />
+          <Property Name="Autor" Type="String" Nullable="false" />
+          <Property Name="Categoria" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Associado">
           <Key>

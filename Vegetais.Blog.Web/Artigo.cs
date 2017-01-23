@@ -24,5 +24,8 @@ namespace Vegetais.Blog.Web
         public string Conteudo { get; set; }
         public string Permalink { get; set; }
         public bool SoParaAssinantes { get; set; }
+        public System.DateTime DataDePublicacao { get; set; }
+        public string Autor { get; set; }
+        public string Categoria { get; set; }
     }
 }
