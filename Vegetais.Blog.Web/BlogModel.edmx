@@ -62,7 +62,7 @@
           <Property Name="Nome" Type="String" Nullable="false" />
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="IP" Type="String" Nullable="false" />
-          <Property Name="HoraCadastro" Type="String" Nullable="false" />
+          <Property Name="HoraCadastro" Type="DateTime" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

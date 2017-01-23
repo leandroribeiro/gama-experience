@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/22/2017 18:57:53
+-- Date Created: 01/23/2017 14:37:37
 -- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
@@ -22,8 +22,8 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[PostSet]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[PostSet];
+IF OBJECT_ID(N'[dbo].[ArtigoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[ArtigoSet];
 GO
 IF OBJECT_ID(N'[dbo].[AssociadoSet]', 'U') IS NOT NULL
     DROP TABLE [dbo].[AssociadoSet];
@@ -41,7 +41,10 @@ CREATE TABLE [dbo].[ArtigoSet] (
     [Video] nvarchar(max)  NULL,
     [Conteudo] nvarchar(max)  NOT NULL,
     [Permalink] nvarchar(max)  NOT NULL,
-    [SoParaAssinantes] bit  NOT NULL
+    [SoParaAssinantes] bit  NOT NULL,
+    [DataDePublicacao] datetime  NOT NULL,
+    [Autor] nvarchar(max)  NOT NULL,
+    [Categoria] nvarchar(max)  NOT NULL
 );
 GO
 
@@ -51,7 +54,7 @@ CREATE TABLE [dbo].[AssociadoSet] (
     [Nome] nvarchar(max)  NOT NULL,
     [Email] nvarchar(max)  NOT NULL,
     [IP] nvarchar(max)  NOT NULL,
-    [HoraCadastro] nvarchar(max)  NOT NULL
+    [HoraCadastro] datetime  NOT NULL
 );
 GO
 
