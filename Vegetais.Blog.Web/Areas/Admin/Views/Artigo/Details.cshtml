@@ -4,18 +4,35 @@
     ViewBag.Title = "Ver";
 }
 
-<h2>Details</h2>
+<h2>Ver</h2>
 
 <div>
-    <h4>Post</h4>
-    <hr />
+    <h4>Artigo</h4>
+    <hr/>
     <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDePublicacao)
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.DataDePublicacao.ToShortDateString())
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Titulo)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Conteudo)
+        </dt>
+
+        <dd>
+            @Html.Raw(Model.Conteudo)
         </dd>
 
         <dt>
@@ -32,6 +49,22 @@
 
         <dd>
             @Html.DisplayFor(model => model.Video)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria)
         </dd>
 
     </dl>
