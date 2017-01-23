@@ -50,6 +50,7 @@ namespace Vegetais.Blog.Web.Areas.Admin.Controllers
         public ActionResult Create([Bind(Include = "Id,Titulo,Conteudo,Imagem,Video")] Artigo post)
         {
             post.Permalink = MyHTMLHelper.ConvertoToUrl(post.Titulo);
+            post.DataDePublicacao = DateTime.Now;
 
             if (ModelState.IsValid)
             {
