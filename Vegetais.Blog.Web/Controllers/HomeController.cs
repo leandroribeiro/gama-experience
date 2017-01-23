@@ -42,6 +42,15 @@ namespace Vegetais.Blog.Web.Controllers
             return View();
         }
 
+        public ActionResult Transmissao()
+        {
+            return View();
+        }
+
+        public ActionResult IndicarAmigo()
+        {
+            return View();
+        }
     }
 
 
