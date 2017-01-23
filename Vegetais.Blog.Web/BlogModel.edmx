@@ -20,6 +20,9 @@
     <Property Name="Conteudo" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Permalink" Type="nvarchar(max)" Nullable="false" />
     <Property Name="SoParaAssinantes" Type="bit" Nullable="false" />
+    <Property Name="DataDePublicacao" Type="datetime" Nullable="false" />
+    <Property Name="Autor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Categoria" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="AssociadoSet">
     <Key>
@@ -29,7 +32,7 @@
     <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="IP" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="HoraCadastro" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HoraCadastro" Type="datetime" Nullable="false" />
   </EntityType>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -80,6 +83,9 @@
           <ScalarProperty Name="Conteudo" ColumnName="Conteudo" />
           <ScalarProperty Name="Permalink" ColumnName="Permalink" />
           <ScalarProperty Name="SoParaAssinantes" ColumnName="SoParaAssinantes" />
+          <ScalarProperty Name="DataDePublicacao" ColumnName="DataDePublicacao" />
+          <ScalarProperty Name="Autor" ColumnName="Autor" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
