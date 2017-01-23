@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vegetais.Blog.Web", "Vegetais.Blog.Web\Vegetais.Blog.Web.csproj", "{AC363054-974A-4974-8945-EA4522AF4003}"
 EndProject
@@ -9,14 +9,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vegetais.Blog.Infrastructur
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Any CPU = Azure|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC363054-974A-4974-8945-EA4522AF4003}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{AC363054-974A-4974-8945-EA4522AF4003}.Azure|Any CPU.Build.0 = Azure|Any CPU
 		{AC363054-974A-4974-8945-EA4522AF4003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC363054-974A-4974-8945-EA4522AF4003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC363054-974A-4974-8945-EA4522AF4003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC363054-974A-4974-8945-EA4522AF4003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Azure|Any CPU.Build.0 = Azure|Any CPU
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -192,6 +192,7 @@
       <DependentUpon>BlogModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="BlogModelContainer.cs" />
+    <Compile Include="Controllers\ArtigoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -469,6 +470,7 @@
     <Content Include="Views\Home\Contato.cshtml" />
     <Content Include="Views\Home\Transmissao.cshtml" />
     <Content Include="Views\Home\IndicarAmigo.cshtml" />
+    <Content Include="Views\Artigo\Index.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

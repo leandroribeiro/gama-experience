@@ -5,6 +5,11 @@ namespace Vegetais.Blog.Web.Models
 {
     public class ArtigoViewModel
     {
+        public ArtigoViewModel(Artigo model) : this(model.Titulo, model.Conteudo, model.Imagem, model.Video, model.Permalink, model.Categoria, model.Autor, model.DataDePublicacao)
+        {
+            
+        }
+
         public ArtigoViewModel(string titulo, string conteudo, string imagem, string video, string link, string categoria, string autor, DateTime dataDePublicacao)
         {
             this.Titulo = titulo;

@@ -14,12 +14,25 @@ namespace Vegetais.Blog.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "Blog",    // Route name
+                "blog/{nomeArtigo}",// URL with parameters
+                new
+                {
+                    controller = "Artigo",
+                    action = "Index",
+                    nomeArtigo = ""
+                },
+                namespaces: new[] { "Vegetais.Blog.Web.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "Vegetais.Blog.Web.Controllers" }
 
             );
+
         }
     }
 }
