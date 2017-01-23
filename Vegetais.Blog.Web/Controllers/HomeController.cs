@@ -22,5 +22,27 @@ namespace Vegetais.Blog.Web.Controllers
             return View(artigos);
         }
 
+        public ActionResult Sobre()
+        {
+            return View();
+        }
+
+        public ActionResult Materiais()
+        {
+            return View();
+        }
+
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
+
+        public ActionResult Contato()
+        {
+            return View();
+        }
+
     }
+
+
 }
