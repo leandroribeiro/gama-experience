@@ -30,6 +30,7 @@ input[type="button"],input[type="submit"],li.parallelogram{
     -o-transition:0.5s all;
     -ms-transition:0.5s all;
 }
+
 h1,h2,h3,h4,h5,h6{
     margin:0;
      font-family: 'Roboto Condensed', sans-serif;
@@ -424,13 +425,16 @@ i.glyphicon.glyphicon-plus{
 }
 .blo-top {
     border-bottom: 1px solid #aeaeae;
+   
 }
 .tech-btm {
     padding: 2em;
     background:#fff;
 }
 .technology-right{
-    width:30%
+    padding: 2em 0;
+    width: 30%;
+    
 }
 .technology-right-1 {
     width: 30%;
@@ -581,7 +585,7 @@ min-height: 300px;
 }
 /*--business--*/
 .business {
-     padding: 10em;
+    padding: 10em;
     background: #fff;
 }
 .business li {
@@ -784,7 +788,7 @@ h4.media-heading {
   width: 11%;
   font-size: 1.1em;
   background: #61aadd;
-  padding: 0.5em 1em;
+  padding: 0.5em 3em;
   text-align: center;
   color: #fff;
   border: none;
@@ -1174,6 +1178,7 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
     width: 31%;
     padding: 7px 0px;
 }
+
 .foot-nav li a {
     font-size: 0.8em;
 }
