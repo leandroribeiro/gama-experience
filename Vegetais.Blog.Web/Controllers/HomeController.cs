@@ -47,6 +47,10 @@ namespace Vegetais.Blog.Web.Controllers
             return View();
         }
 
+        public ActionResult Obrigado()
+        {
+            return View();
+        }
         public ActionResult IndicarAmigo()
         {
             return View();

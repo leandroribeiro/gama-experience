@@ -471,6 +471,7 @@
     <Content Include="Views\Home\Transmissao.cshtml" />
     <Content Include="Views\Home\IndicarAmigo.cshtml" />
     <Content Include="Views\Artigo\Index.cshtml" />
+    <Content Include="Views\Home\Obrigado.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

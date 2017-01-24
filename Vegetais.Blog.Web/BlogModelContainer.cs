@@ -10,6 +10,8 @@ namespace Vegetais.Blog.Web
 {
     public partial class BlogModelContainer : DbContext
     {
+        public object ArtigoSet { get; internal set; }
+
         public override int SaveChanges()
         {
             try
