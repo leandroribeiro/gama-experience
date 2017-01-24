@@ -58,6 +58,16 @@ CREATE TABLE [dbo].[AssociadoSet] (
 );
 GO
 
+-- Creating table 'User Admin' 
+
+CREATE TABLE [dbo].[UserSet] (
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[Nome] NVARCHAR(max) NOT NULL,
+	[Login] NVARCHAR(max) NOT NULL,
+	[Senha] NVARCHAR(25) NOT NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
@@ -74,6 +84,10 @@ ADD CONSTRAINT [PK_AssociadoSet]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
+-- Creating primary key on [Id] in table 'UserSet'
+ALTER TABLE [dbo].[UserSet]
+ADD CONSTRAINT [PK_UserSet]
+	PRIMARY KEY CLUSTERED ([Id] ASC);
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------

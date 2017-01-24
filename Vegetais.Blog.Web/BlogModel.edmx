@@ -41,6 +41,7 @@
         <EntityContainer Name="BlogModelContainer" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ArtigoSet" EntityType="BlogModel.Artigo" />
           <EntitySet Name="AssociadoSet" EntityType="BlogModel.Associado" />
+          <EntitySet Name="UserSet" EntityType="BlogModel.User" />
         </EntityContainer>
         <EntityType Name="Artigo">
           <Key>
@@ -66,6 +67,15 @@
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="IP" Type="String" Nullable="false" />
           <Property Name="HoraCadastro" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <Property Name="Login" Type="String" Nullable="false" />
+          <Property Name="Senha" Type="String" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>

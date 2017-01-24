@@ -311,6 +311,7 @@ a.blog.orn{
 }
 .technology {
     min-height: 190em;
+    min-height: auto;
 }
 .tc-ch {
     float: left;
@@ -1350,7 +1351,7 @@ h4.media-heading {
     width: 84.6%;
 }
 .tech-no {
-    top: -23px;
+    top: -33px;
 }
 .banner p {
     margin: 1em auto 1.5em;
