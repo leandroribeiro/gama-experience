@@ -97,7 +97,7 @@
                     <div class="blo-top">
                         <div class="tech-btm">
                             <h4>Aprendizado </h4>
-                            <a href="http://vegetais.azurewebsites.net/Home/Transmissao"><img src="images/banner1.jpg" class="img-responsive" alt="" /></a>
+                            <a href="@Url.Action("Transmissao", "Home")"><img src="@Url.Content("~/images/banner1.jpg")" class="img-responsive" alt="" /></a>
                         </div>
                     </div>
                     <div class="blo-top">
@@ -125,7 +125,7 @@
 
                                 <div class="blog-grids">
                                     <div class="blog-grid-left">
-                                        <a href="#"><img src="images/post-blog-uvideos-live.jpg" class="img-responsive" alt="" /></a>
+                                        <a href="#"><img src="@Url.Content("~/images/post-blog-uvideos-live.jpg")" class="img-responsive" alt="" /></a>
                                     </div>
                                     <div class="blog-grid-right">
 
@@ -135,7 +135,7 @@
                                 </div>
                                 <div class="blog-grids">
                                     <div class="blog-grid-left">
-                                        <a href="#"><img src="images/post-uvideos-comunicacao-empresarial.jpg" class="img-responsive" alt="" /></a>
+                                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-comunicacao-empresarial.jpg")" class="img-responsive" alt="" /></a>
                                     </div>
                                     <div class="blog-grid-right">
 
@@ -145,7 +145,7 @@
                                 </div>
                                 <div class="blog-grids">
                                     <div class="blog-grid-left">
-                                        <a href="#"><img src="images/post-uvideos-instagram-live.jpg" class="img-responsive" alt="" /></a>
+                                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-instagram-live.jpg")" class="img-responsive" alt="" /></a>
                                     </div>
                                     <div class="blog-grid-right">
 
@@ -176,21 +176,21 @@
                 <h4>Comunique-se</h4>
                 <div class="mid-btm">
                     <p>Aprenda a criar um bom canal de comunicação na sua empresa.</p>
-                    <a href="transmissao.html">https://call-empresa.com/</a>
+                    <a href="@Url.Action("Transmissao", "Home")">https://call-empresa.com/</a>
                 </div>
 
                 <p>Aprenda a Criar relacionamento e proximidade com seu público.</p>
-                <a href="transmissao.html">https://audiencia-web.com/</a>
+                <a href="@Url.Action("Transmissao", "Home")">https://audiencia-web.com/</a>
 
             </div>
             <div class="col-md-4 footer-right">
                 <h4>Links Úteis</h4>
-                <li><a href="transmissao.html">Dicas para Transmissões</a></li>
-                <li><a href="sobre.html">Sobre a Uvídeos </a></li>
-                <li><a href="contato.html">Entre em Contato</a></li>
-                <li><a href="materiais.html">Materiais Úteis</a></li>
-                <li><a href="indique-um-amigo.html">Indique um amigo</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="@Url.Action("Transmissao", "Home")">Dicas para Transmissões</a></li>
+                <li><a href="@Url.Action("Sobre", "Home")">Sobre a Uvídeos </a></li>
+                <li><a href="@Url.Action("Contato", "Home")">Entre em Contato</a></li>
+                <li><a href="@Url.Action("Materiais", "Home")">Materiais Úteis</a></li>
+                <li><a href="@Url.Action("IndicarAmigo", "Home")">Indique um amigo</a></li>
+                <li><a href="@Url.Action("Cadastro", "Home")">Cadastre-se</a></li>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -200,11 +200,11 @@
     <div class="foot-nav">
         <div class="container">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="design.html">Sobre</a></li>
-                <li><a href="business.html">Materiais</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="business.html">Contato</a></li>
+                <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Sobre", "Home")">Sobre</a></li>
+                <li><a href="@Url.Action("Materiais", "Home")">Materiais</a></li>
+                <li><a href="@Url.Action("Cadastro", "Home")">Cadastro</a></li>
+                <li><a href="@Url.Action("Contato", "Home")">Contato</a></li>
                 <div class="clearfix"></div>
             </ul>
         </div>
@@ -212,32 +212,9 @@
     <!-- footer-bottom -->
     <div class="copyright">
         <div class="container">
-            <p>© 2016 Desenvolvido por Os Vegetais | GAMA EXPERIÊNCE</p>
+            <p>© 2016 Desenvolvido por Os Vegetais</p>
         </div>
     </div>
-
-
-    <!-- VERSAO ANTERIOR -->
-    <!--
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("ADMIN", "Index", "Home", new { area = "Admin" }, null)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-        -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
