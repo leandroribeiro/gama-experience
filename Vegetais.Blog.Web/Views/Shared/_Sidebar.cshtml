@@ -1,4 +1,5 @@
-﻿<!-- technology-right -->
+﻿@using Vegetais.Blog.Web.Models
+<!-- technology-right -->
 <div class="col-md-3 technology-right">
     <div class="blo-top">
         <div class="tech-btm">
@@ -27,36 +28,22 @@
         <div class="tech-btm">
             <h4>Matérias mais Vistas</h4>
             <div class="blog-grids">
-                <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="#"><img src="@Url.Content("~/images/post-blog-uvideos-live.jpg")" class="img-responsive" alt="" /></a>
-                    </div>
-                    <div class="blog-grid-right">
+                @{
+                    var viewModel = (MainLayoutViewModel) ViewBag.MainLayoutViewModel;
+                }
+                @foreach (var artigo in viewModel.MateriasMaisVista)
+                {
+                    <div class="blog-grids">
+                        <div class="blog-grid-left">
+                            <a href="#"><img src="@artigo.Imagem" class="img-responsive" alt="" /></a>
+                        </div>
+                        <div class="blog-grid-right">
 
-                        <h5><a href="#">O que é para Fazer uma boa Live?</a> </h5>
+                            <h5><a href="@Url.RouteUrl("Blog", new { nomeArtigo = @artigo.Link})">@artigo.Titulo</a> </h5>
+                        </div>
+                        <div class="clearfix"> </div>
                     </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-comunicacao-empresarial.jpg")" class="img-responsive" alt="" /></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="#">Segredos da Comunicação Empresarial</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="blog-grids">
-                    <div class="blog-grid-left">
-                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-instagram-live.jpg")" class="img-responsive" alt="" /></a>
-                    </div>
-                    <div class="blog-grid-right">
-
-                        <h5><a href="#">Fazendo Live no Insta, Saiba tudo.</a> </h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+                }
             </div>
         </div>
     </div>
