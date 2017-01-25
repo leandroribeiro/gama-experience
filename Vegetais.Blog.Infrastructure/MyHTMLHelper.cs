@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,17 @@ namespace Vegetais.Blog.Infrastructure
 {
     public static class MyHTMLHelper
     {
-        public static string ConvertoToUrl(string value)
+        public static string ConvertoToUrl(string text)
         {
-            return value.ToLower().Replace(" ", "-");
+            if (string.IsNullOrWhiteSpace(text))
+                return text;
+
+            text = text.Normalize(NormalizationForm.FormD);
+            var chars = text.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray();
+
+            var textSanitized = new string(chars).Normalize(NormalizationForm.FormC);
+
+            return textSanitized.ToLower().Replace(" ", "-");
         }
 
     }
