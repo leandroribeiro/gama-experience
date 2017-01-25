@@ -310,7 +310,7 @@ a.blog.orn{
     top: -33px;
 }
 .technology {
-    min-height: 190em;
+    min-height: ;
     min-height: auto;
 }
 .tc-ch {
@@ -435,6 +435,7 @@ i.glyphicon.glyphicon-plus{
 .technology-right{
     padding: 2em 0;
     width: 30%;
+    float: right;
     
 }
 .technology-right-1 {
