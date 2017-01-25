@@ -27,7 +27,29 @@ namespace Vegetais.Blog.Web.Controllers
         [HttpPost]
         public ActionResult Enviar(string nome, string email)
         {
+            var db = new BlogModelContainer();
+            var associado = new Associado()
+            {
+                Email = email,
+                HoraCadastro = DateTime.Now,
+                IP = GetIPAdress(),
+                Nome = nome
+            };
+
+            db.AssociadoSet.Add(associado);
+            db.SaveChanges();
+
             return View();
+        }
+
+        private string GetIPAdress()
+        {
+            var ipAdress = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+
+            if (string.IsNullOrEmpty(ipAdress))
+                ipAdress = Request.ServerVariables["REMOTE_ADDR"];
+            
+            return ipAdress;
         }
 
         public ActionResult Sobre()
