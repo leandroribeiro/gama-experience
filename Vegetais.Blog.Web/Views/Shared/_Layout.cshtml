@@ -104,7 +104,7 @@
                     <div class="tech-btm">
                         <h4>Newsletter</h4>
                         <p>Deixe seu e-mail e Receba artigos sobre como fazer transmissões profissionais.</p>
-                        @using (Html.BeginForm())
+                        @using (Html.BeginForm("Enviar", "Home"))
                         {
                             <div class="name">
                                 <input id="nome" name="nome" type="text" placeholder="Nome" required="">

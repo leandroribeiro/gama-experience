@@ -27,7 +27,7 @@ namespace Vegetais.Blog.Web.Controllers
         [HttpPost]
         public ActionResult Enviar(string nome, string email)
         {
-            return View("Index");
+            return View();
         }
 
         public ActionResult Sobre()
