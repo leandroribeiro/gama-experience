@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,11 +18,12 @@ namespace Vegetais.Blog.Web.Controllers
 
             var db = new BlogModelContainer();
 
+            var rnd = (new Random()).NextDouble();
+
             var artigos = db.ArtigoSet
+                .OrderBy(x => SqlFunctions.Checksum(x.Id * rnd))
                 .ToList()
-                //.Select(x => new ArtigoViewModel(x.Titulo, String.Format("{0} {1}", x.Conteudo.Substring(0, 800), "..."), x.Imagem, x.Video, x.Permalink, x.Categoria, x.Autor, x.DataDePublicacao))
                 .Select(x => new ArtigoViewModel(x.Titulo, x.Conteudo, x.Imagem, x.Video, x.Permalink, x.Categoria, x.Autor, x.DataDePublicacao))
-                .OrderByDescending(x => x.DataDePublicacao)
                 .ToList();
 
             this.MainLayoutViewModel.MateriasMaisVista = artigos;
