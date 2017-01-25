@@ -193,6 +193,9 @@ background-size:cover;
 -moz-background-size: cover;
 min-height: 550px;
 }
+.banner-home {
+    font-size: 42pt;
+}
 .banner a {
     font-size: 1em;
     color: #fff;
@@ -309,8 +312,7 @@ a.blog.orn{
     top: -33px;
 }
 .technology {
-    min-height: 190em;
-    min-height: auto;
+     min-height: auto;
 }
 .tc-ch {
     float: left;
@@ -431,7 +433,8 @@ i.glyphicon.glyphicon-plus{
     background:#fff;
 }
 .technology-right{
-    width:30%
+    width:30%;
+    margin-top: 2em;
 }
 .technology-right-1 {
     width: 30%;
@@ -448,6 +451,7 @@ i.glyphicon.glyphicon-plus{
 .footer {
     background: #121212;
     padding: 3em 0;
+    margin-top: 2em;
 }
 .footer h6 {
     font-size: 1.7em;
@@ -596,7 +600,7 @@ min-height: 300px;
     color: #61aadd;
     font-size: 1.7em;
     font-weight: 700;
-    margin: 0 0 0.5em;
+    margin: 0;
 }
 .business h2 {
     color: #61aadd;
@@ -695,7 +699,7 @@ min-height: 300px;
     font-size:15px;
     }
 .contact-grids input[type="text"] {
-    width: 32%;
+    width: 31.9%;
     float: left;
 }
 .contact-grids input[type="text"]:nth-child(2){
@@ -780,7 +784,6 @@ h4.media-heading {
       -webkit-appearance: none;
 }
 .comment-bottom input[type="submit"] {
-  width: 11%;
   font-size: 1.1em;
   background: #61aadd;
   padding: 0.5em 1em;
@@ -910,6 +913,7 @@ ul.nav.navbar-nav li a {
 .technology-right {
     width: 30%;
     float: right;
+    margin-top: 2em;
 }
 .tc-ch {
     float: left;
@@ -1013,6 +1017,9 @@ h4.media-heading {
 .contact-grid:nth-child(2) {
     margin: 0 0em;
 }
+.banner-home {
+    font-size: 42pt;
+}
 }
 /*-- responsive-design --*/
 @media (max-width: 768px){
@@ -1026,6 +1033,9 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 .business-left {
     margin-top: 2em;
 }
+.banner-home {
+    font-size: 42pt;
+}
 }
 /*-- responsive-design --*/
 @media (max-width: 736px){
@@ -1038,6 +1048,9 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 }
 .header-top {
     padding: 1em 0;
+}
+.banner-home {
+    font-size: 42pt;
 }
 .banner {
     min-height: 330px;
@@ -1056,11 +1069,13 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 .technology-right {
     width: 100%;
     float: none;
+    margin-top: 2em;
 }
 .technology-right {
     width: 100%;
     float: none;
     margin: 183em 0 0;
+    margin-top: 2em;
 }
 .tech-btm {
     padding: 2em;
@@ -1108,11 +1123,17 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 .foot-nav li a {
     padding: 0.5em 0.4em;
 }
+.banner-home {
+    font-size: 42pt;
+}
 }
 /*-- responsive-design --*/
 @media (max-width: 600px){
 .foot-nav li a {
     padding: 0.5em 0.2em;
+}
+.banner-home {
+    font-size: 42pt;
 }
 }
 /*-- responsive-design --*/
@@ -1121,6 +1142,9 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
     float: left;
     width: 40%;
     text-align: center;
+}
+.banner-home {
+    font-size: 42pt;
 }
 .social {
     width: 100%;
@@ -1180,6 +1204,9 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 .footer-left {
     float: none;
     width: 100%;
+}
+.banner-home {
+    font-size: 42pt;
 }
 .footer-middle {
     float: none;
@@ -1244,6 +1271,9 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 .banner h2 {
     font-size: 1.2em;
 }
+.banner-home {
+    font-size: 42pt;
+}
 .banner p {
     font-size: 0.8em;
     line-height: 1.4em;
@@ -1294,6 +1324,9 @@ h4.media-heading {
 .logo {
     width: 50%;
 }
+.banner-home {
+    font-size: 42pt;
+}
 .logo a h1 {
    font-size:1.2em;
     padding: 0.55em 0.5em;
@@ -1310,6 +1343,9 @@ h4.media-heading {
 }
 /*-- responsive-design --*/
 @media (max-width: 320px){
+.banner-home {
+    font-size: 42pt;
+}
 .logo a h1 {
     font-size: 1em;
     padding: 0.5em 0.5em;
@@ -1342,8 +1378,7 @@ h4.media-heading {
     width: 84.6%;
 }
 .tech-no {
-   position: relative;
-   top: -23px;
+    top: -23px;
 }
 .banner p {
     margin: 1em auto 1.5em;
@@ -1361,7 +1396,6 @@ h4.media-heading {
 .technology-right {
     margin: 196em 0 0;
     padding: 0;
-    min-height: auto;
 }
 .blog-grid-left {
     width: 30%;
@@ -1400,4 +1434,5 @@ h4.media-heading {
 .foot-nav li a {
     padding: 0.5em 0.35em;
     font-size: 0.75em;
+}
 }
