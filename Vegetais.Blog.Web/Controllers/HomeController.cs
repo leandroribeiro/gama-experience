@@ -42,7 +42,7 @@ namespace Vegetais.Blog.Web.Controllers
             db.AssociadoSet.Add(associado);
             db.SaveChanges();
 
-            return View();
+            return View("Obrigado");
         }
 
         public ActionResult Sobre()
