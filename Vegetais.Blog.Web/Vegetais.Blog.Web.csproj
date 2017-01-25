@@ -168,6 +168,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AssociadoController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\ArtigoController.cs" />
     <Compile Include="Artigo.cs">
@@ -270,6 +271,11 @@
     <Content Include="Areas\Admin\Views\Artigo\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Artigo\Index.cshtml" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Areas\Admin\Views\Associado\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Associado\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Associado\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Associado\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Associado\Index.cshtml" />
     <None Include="Properties\PublishProfiles\vegetais - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\vegetais - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
