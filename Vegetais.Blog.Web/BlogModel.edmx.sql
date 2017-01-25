@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/23/2017 14:37:37
+-- Date Created: 01/24/2017 22:52:40
 -- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
@@ -58,13 +58,12 @@ CREATE TABLE [dbo].[AssociadoSet] (
 );
 GO
 
--- Creating table 'User Admin' 
-
+-- Creating table 'UserSet'
 CREATE TABLE [dbo].[UserSet] (
-	[Id] INT IDENTITY(1,1) NOT NULL,
-	[Nome] NVARCHAR(max) NOT NULL,
-	[Login] NVARCHAR(max) NOT NULL,
-	[Senha] NVARCHAR(25) NOT NULL
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Nome] nvarchar(max)  NOT NULL,
+    [Login] nvarchar(max)  NOT NULL,
+    [Senha] nvarchar(max)  NOT NULL
 );
 GO
 
@@ -87,7 +86,9 @@ GO
 -- Creating primary key on [Id] in table 'UserSet'
 ALTER TABLE [dbo].[UserSet]
 ADD CONSTRAINT [PK_UserSet]
-	PRIMARY KEY CLUSTERED ([Id] ASC);
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
