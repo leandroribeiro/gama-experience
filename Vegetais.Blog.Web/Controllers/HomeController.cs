@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Vegetais.Blog.Infrastructure;
 using Vegetais.Blog.Web.Models;
 
 namespace Vegetais.Blog.Web.Controllers
@@ -32,24 +33,14 @@ namespace Vegetais.Blog.Web.Controllers
             {
                 Email = email,
                 HoraCadastro = DateTime.Now,
-                IP = GetIPAdress(),
+                IP = MyRequestHelper.GetIPAdress(Request),
                 Nome = nome
             };
-
+            
             db.AssociadoSet.Add(associado);
             db.SaveChanges();
 
             return View();
-        }
-
-        private string GetIPAdress()
-        {
-            var ipAdress = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
-
-            if (string.IsNullOrEmpty(ipAdress))
-                ipAdress = Request.ServerVariables["REMOTE_ADDR"];
-            
-            return ipAdress;
         }
 
         public ActionResult Sobre()
