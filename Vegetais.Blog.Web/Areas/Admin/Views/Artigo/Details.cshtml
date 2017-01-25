@@ -16,7 +16,7 @@
         </dt>
 
         <dd>
-            @Html.Raw(Model.DataDePublicacao.ToShortDateString())
+            @Html.Raw(Model.DataDePublicacao.ToString("dd/MM/yyy HH:mm:ss"))
         </dd>
 
         <dt>
@@ -40,7 +40,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Imagem)
+            <img src="@Html.Raw(Model.Imagem)" alt=""/>
         </dd>
 
         <dt>
