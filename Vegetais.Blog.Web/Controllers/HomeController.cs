@@ -8,7 +8,7 @@ using Vegetais.Blog.Web.Models;
 
 namespace Vegetais.Blog.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         // GET: Blog
         public ActionResult Index()

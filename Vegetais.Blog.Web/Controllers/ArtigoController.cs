@@ -7,7 +7,7 @@ using Vegetais.Blog.Web.Models;
 
 namespace Vegetais.Blog.Web.Controllers
 {
-    public class ArtigoController : Controller
+    public class ArtigoController : BaseController
     {
         // GET: Artigo
         public ActionResult Index(string nomeArtigo)
