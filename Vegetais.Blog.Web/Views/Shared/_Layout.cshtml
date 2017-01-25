@@ -91,75 +91,73 @@
             <div class="col-md-9 technology-left">
                 @RenderBody()
             </div>
-           
-                <!-- technology-right -->
-                <div class="col-md-3 technology-right">
-                    <div class="blo-top">
-                        <div class="tech-btm">
-                            <h4>Aprendizado </h4>
-                            <a href="@Url.Action("Transmissao", "Home")"><img src="@Url.Content("~/images/banner1.jpg")" class="img-responsive" alt="" /></a>
-                        </div>
+
+            <!-- technology-right -->
+            <div class="col-md-3 technology-right">
+                <div class="blo-top">
+                    <div class="tech-btm">
+                        <h4>Aprendizado </h4>
+                        <a href="@Url.Action("Transmissao", "Home")"><img src="@Url.Content("~/images/banner1.jpg")" class="img-responsive" alt="" /></a>
                     </div>
-                    <div class="blo-top">
-                        <div class="tech-btm">
-                            <h4>Newsletter</h4>
-                            <p>Deixe seu e-mail e Receba artigos sobre como fazer transmissões profissionais.</p>
+                </div>
+                <div class="blo-top">
+                    <div class="tech-btm">
+                        <h4>Newsletter</h4>
+                        <p>Deixe seu e-mail e Receba artigos sobre como fazer transmissões profissionais.</p>
+                        @using (Html.BeginForm())
+                        {
                             <div class="name">
-                                <form>
-                                    <input type="text" placeholder="Nome" required="">
-                                    <input class="email" type="text" placeholder="Email" required="">
-                                </form>
+                                <input id="nome" name="nome" type="text" placeholder="Nome" required="">
+                                <input id="email" name="email" class="email" type="text" placeholder="Email" required="">
                             </div>
                             <div class="button">
-                                <form>
-                                    <input type="submit" value="Enviar">
-                                </form>
+                                <input type="submit" value="Enviar">
                             </div>
-                            <div class="clearfix"> </div>
-                        </div>
+                        }
+                        <div class="clearfix"> </div>
                     </div>
-                    <div class="blo-top1">
-                        <div class="tech-btm">
-                            <h4>Matérias mais Vistas </h4>
+                </div>
+                <div class="blo-top1">
+                    <div class="tech-btm">
+                        <h4>Matérias mais Vistas </h4>
+                        <div class="blog-grids">
+
                             <div class="blog-grids">
-
-                                <div class="blog-grids">
-                                    <div class="blog-grid-left">
-                                        <a href="#"><img src="@Url.Content("~/images/post-blog-uvideos-live.jpg")" class="img-responsive" alt="" /></a>
-                                    </div>
-                                    <div class="blog-grid-right">
-
-                                        <h5><a href="#">O que é para Fazer uma boa Live?</a> </h5>
-                                    </div>
-                                    <div class="clearfix"> </div>
+                                <div class="blog-grid-left">
+                                    <a href="#"><img src="@Url.Content("~/images/post-blog-uvideos-live.jpg")" class="img-responsive" alt="" /></a>
                                 </div>
-                                <div class="blog-grids">
-                                    <div class="blog-grid-left">
-                                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-comunicacao-empresarial.jpg")" class="img-responsive" alt="" /></a>
-                                    </div>
-                                    <div class="blog-grid-right">
+                                <div class="blog-grid-right">
 
-                                        <h5><a href="#">Segredos da Comunicação Empresarial</a> </h5>
-                                    </div>
-                                    <div class="clearfix"> </div>
+                                    <h5><a href="#">O que é para Fazer uma boa Live?</a> </h5>
                                 </div>
-                                <div class="blog-grids">
-                                    <div class="blog-grid-left">
-                                        <a href="#"><img src="@Url.Content("~/images/post-uvideos-instagram-live.jpg")" class="img-responsive" alt="" /></a>
-                                    </div>
-                                    <div class="blog-grid-right">
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-grids">
+                                <div class="blog-grid-left">
+                                    <a href="#"><img src="@Url.Content("~/images/post-uvideos-comunicacao-empresarial.jpg")" class="img-responsive" alt="" /></a>
+                                </div>
+                                <div class="blog-grid-right">
 
-                                        <h5><a href="#">Fazendo Live no Insta, Saiba tudo.</a> </h5>
-                                    </div>
-                                    <div class="clearfix"> </div>
+                                    <h5><a href="#">Segredos da Comunicação Empresarial</a> </h5>
                                 </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-grids">
+                                <div class="blog-grid-left">
+                                    <a href="#"><img src="@Url.Content("~/images/post-uvideos-instagram-live.jpg")" class="img-responsive" alt="" /></a>
+                                </div>
+                                <div class="blog-grid-right">
+
+                                    <h5><a href="#">Fazendo Live no Insta, Saiba tudo.</a> </h5>
+                                </div>
+                                <div class="clearfix"> </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
-                <!-- technology-right -->
-
+            </div>
+            <div class="clearfix"></div>
+            <!-- technology-right -->
             <!-- technology-right -->
         </div>
     </div>
