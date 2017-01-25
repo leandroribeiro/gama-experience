@@ -482,6 +482,9 @@
     <Content Include="Views\Artigo\Index.cshtml" />
     <Content Include="Views\Home\Obrigado.cshtml" />
     <Content Include="Views\Home\Enviar.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
