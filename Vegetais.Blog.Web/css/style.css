@@ -1073,8 +1073,8 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 }
 .technology-right {
     width: 100%;
-    float: none;
-    margin: 183em 0 0;
+    float: right;
+    margin: auto;
     margin-top: 2em;
 }
 .tech-btm {
