@@ -42,7 +42,17 @@ namespace Vegetais.Blog.Web.Controllers
             db.AssociadoSet.Add(associado);
             db.SaveChanges();
 
+            ArmazenarCookie(nome, email);
+
             return View("Obrigado");
+        }
+
+        private void ArmazenarCookie(string nome, string email)
+        {
+            var identificador = Request.AnonymousID;
+            Response.Cookies[identificador]["nome"] = nome;
+            Response.Cookies[identificador]["email"] = email;
+            Response.Cookies[identificador].Expires = DateTime.Now.AddYears(1);
         }
 
         public ActionResult Sobre()
