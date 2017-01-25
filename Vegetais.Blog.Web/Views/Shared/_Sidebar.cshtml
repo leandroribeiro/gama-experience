@@ -4,7 +4,7 @@
     <div class="blo-top">
         <div class="tech-btm">
             <h4>Aprendizado </h4>
-            <a href="@Url.Action("Transmissao", "Home")"><img src="@Url.Content("~/images/banner1.jpg")" class="img-responsive" alt="" /></a>
+            <a href="@Url.Action("Transmissao", "Home")"><img src="@Url.Content("~/images/banner1.jpg")" class="img-responsive" alt=""/></a>
         </div>
     </div>
     <div class="blo-top">
@@ -35,30 +35,17 @@
                 {
                     <div class="blog-grids">
                         <div class="blog-grid-left">
-                            <a href="#"><img src="@artigo.Imagem" class="img-responsive" alt="" /></a>
+                            <a href="#"><img src="@artigo.Imagem" class="img-responsive" alt=""/></a>
                         </div>
                         <div class="blog-grid-right">
 
-                            <h5><a href="@Url.RouteUrl("Blog", new { nomeArtigo = @artigo.Link})">@artigo.Titulo</a> </h5>
+                            <h5><a href="@Url.RouteUrl("Blog", new {nomeArtigo = @artigo.Link})">@artigo.Titulo</a> </h5>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
                 }
             </div>
         </div>
-    </div>
-</div>
-
-<!--Formulário dentro do artigo-->
-<div class="comment">
-    <h3>Gostou? Deixe seu e-mail e receba novidades!</h3>
-
-    <div class=" comment-bottom">
-        <form>
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Email">
-            <input type="submit" value="Enviar">
-        </form>
     </div>
 </div>
 
