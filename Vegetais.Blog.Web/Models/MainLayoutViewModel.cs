@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Vegetais.Blog.Web.Models
 {
-    public class PageBaseViewModel
+    public class MainLayoutViewModel
     {
         public IList<ArtigoViewModel> MateriasMaisVista { get; set; }
     }
