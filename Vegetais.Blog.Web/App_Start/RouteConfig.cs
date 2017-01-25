@@ -26,6 +26,18 @@ namespace Vegetais.Blog.Web
             );
 
             routes.MapRoute(
+                "BlogCategorias",    // Route name
+                "blog/categoria/{nomeCategoria}",// URL with parameters
+                new
+                {
+                    controller = "Artigo",
+                    action = "Categoria",
+                    nomeCategoria = ""
+                },
+                namespaces: new[] { "Vegetais.Blog.Web.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
