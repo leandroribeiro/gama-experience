@@ -16,10 +16,12 @@ namespace Vegetais.Blog.Web.Controllers
             var db = new BlogModelContainer();
 
             var artigos = db.ArtigoSet
+                .OrderByDescending(x => x.DataDePublicacao)
                 .ToList()
-                //.Select(x => new ArtigoViewModel(x.Titulo, String.Format("{0} {1}", x.Conteudo.Substring(0, 800), "..."), x.Imagem, x.Video, x.Permalink, x.Categoria, x.Autor, x.DataDePublicacao))
-                .Select(x => new ArtigoViewModel(x.Titulo, x.Conteudo, x.Imagem, x.Video, x.Permalink, x.Categoria, x.Autor, x.DataDePublicacao))
-                .OrderByDescending(x=>x.DataDePublicacao)
+                .Select(
+                    x =>
+                        new ArtigoViewModel(x.Titulo, x.Conteudo, x.Imagem, x.Video, x.Permalink, x.Categoria, x.Autor,
+                            x.DataDePublicacao))
                 .ToList();
 
             return View(artigos);
