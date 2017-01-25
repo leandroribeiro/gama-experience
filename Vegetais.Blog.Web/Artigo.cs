@@ -20,6 +20,7 @@ namespace Vegetais.Blog.Web
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Imagem { get; set; }
+        [AllowHtml]
         public string Video { get; set; }
         [AllowHtml, UIHint("tinymce_jquery_full")]
         public string Conteudo { get; set; }
