@@ -33,10 +33,10 @@ namespace Vegetais.Blog.Web.Models
         {
             get
             {
-                var permalink = "<a>Ir para</a>";
+                //var permalink = "<a>Ir para</a>";
 
-                if (Conteudo.Length > 400)
-                    return String.Format("{0} ... {1}", Conteudo.Substring(0, 400), permalink);
+                //if (Conteudo.Length > 400)
+                //    return String.Format("{0} ... {1}", Conteudo.Substring(0, 400), permalink);
 
                 return Conteudo;
             }
