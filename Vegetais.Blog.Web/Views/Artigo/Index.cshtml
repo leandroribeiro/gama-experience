@@ -28,6 +28,20 @@
         </div>
     </div>
 
+    <!--Formulário dentro do artigo-->
+    <div class="comment">
+        <h3>Gostou? Deixe seu e-mail e receba novidades!</h3>
+
+        <div class="comment-bottom">
+            @using (Html.BeginForm("Enviar", "Home"))
+            {
+                <input id="nome" name="nome" type="text" placeholder="Nome" required="required">
+                <input id="email" name="email" class="email" type="text" placeholder="Email" required="required">
+                <input type="submit" value="Enviar">
+            }
+        </div>
+    </div>
+
     <!-- comentários -->
     @*<div class="comment-top">
             <h2>Comment</h2>
