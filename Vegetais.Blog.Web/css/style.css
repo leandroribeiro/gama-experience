@@ -309,7 +309,7 @@ a.blog.orn{
 }
 .tech-no {
     position: relative;
-    top: -33px;
+    top: 2em;
 }
 .technology {
      min-height: auto;
@@ -1068,7 +1068,7 @@ span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.g
 }
 .technology-right {
     width: 100%;
-    float: none;
+    float: right;
     margin-top: 2em;
 }
 .technology-right {
@@ -1378,7 +1378,7 @@ h4.media-heading {
     width: 84.6%;
 }
 .tech-no {
-    top: -23px;
+    top: 2em;
 }
 .banner p {
     margin: 1em auto 1.5em;
