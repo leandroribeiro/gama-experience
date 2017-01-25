@@ -1,4 +1,6 @@
 using System;
+using System.Web;
+using System.Web.Mvc;
 using Vegetais.Blog.Infrastructure;
 
 namespace Vegetais.Blog.Web.Models
@@ -7,7 +9,7 @@ namespace Vegetais.Blog.Web.Models
     {
         public ArtigoViewModel(Artigo model) : this(model.Titulo, model.Conteudo, model.Imagem, model.Video, model.Permalink, model.Categoria, model.Autor, model.DataDePublicacao)
         {
-            
+
         }
 
         public ArtigoViewModel(string titulo, string conteudo, string imagem, string video, string link, string categoria, string autor, DateTime dataDePublicacao)
@@ -27,6 +29,18 @@ namespace Vegetais.Blog.Web.Models
 
         public string Conteudo { get; set; }
 
+        public string ConteudoResumo
+        {
+            get
+            {
+                var permalink = "<a>Ir para</a>";
+
+                if (Conteudo.Length > 400)
+                    return String.Format("{0} ... {1}", Conteudo.Substring(0, 400), permalink);
+
+                return Conteudo;
+            }
+        }
         public string Imagem { get; set; }
 
         public string Video { get; set; }

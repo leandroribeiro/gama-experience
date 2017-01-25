@@ -54,7 +54,7 @@
 
             <a class="blog blue" href="@artigo.CategoriaLink">@artigo.Categoria</a>
             <h3><a href="@Url.RouteUrl("Blog", new { nomeArtigo = @artigo.Link})">@artigo.Titulo</a></h3>
-            @Html.Raw(artigo.Conteudo)
+            @Html.Raw(artigo.ConteudoResumo)
 
             <div class="blog-poast-info">
                 <ul>
