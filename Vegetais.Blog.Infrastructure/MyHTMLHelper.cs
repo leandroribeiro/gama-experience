@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -13,6 +14,12 @@ namespace Vegetais.Blog.Infrastructure
     {
         public static string ConvertoToUrl(string text)
         {
+            var textValue = text.ToLower().Replace(" ", "-");
+
+            Regex rgx = new Regex("[^a-zA-Z0-9 -]");
+            return rgx.Replace(textValue, "");
+
+            /*
             if (string.IsNullOrWhiteSpace(text))
                 return text;
 
@@ -22,6 +29,7 @@ namespace Vegetais.Blog.Infrastructure
             var textSanitized = new string(chars).Normalize(NormalizationForm.FormC);
 
             return textSanitized.ToLower().Replace(" ", "-");
+            */
         }
 
     }
