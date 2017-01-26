@@ -38,7 +38,7 @@ namespace Vegetais.Blog.Web.Controllers
                 IP = MyRequestHelper.GetIPAdress(Request),
                 Nome = nome
             };
-            
+
             db.AssociadoSet.Add(associado);
             db.SaveChanges();
 
@@ -87,6 +87,25 @@ namespace Vegetais.Blog.Web.Controllers
         public ActionResult IndicarAmigo()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult IndicarAmigo(string nome, string email, string nomeamigo, string emailamigo)
+        {
+            var db = new BlogModelContainer();
+            var indicacao = new IndiqueUmAmigo()
+            {
+                MeuNome = nome,
+                MeuEmail = email,
+                AmigoNome = nomeamigo,
+                AmigoEmail = emailamigo,
+                DataDeEnvio = DateTime.Now
+            };
+
+            db.IndiqueUmAmigoSet.Add(indicacao);
+            db.SaveChanges();
+
+            return View("ObrigadoIndicacao");
         }
     }
 

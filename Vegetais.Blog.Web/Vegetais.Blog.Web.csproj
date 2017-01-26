@@ -199,6 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IndiqueUmAmigo.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MainLayoutViewModel.cs" />
     <Compile Include="Models\PostViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -515,6 +518,8 @@
     <Content Include="Views\Artigo\Categoria.cshtml" />
     <Content Include="Views\Shared\_Formulario.cshtml" />
     <Content Include="Views\Shared\_Formulario2.cshtml" />
+    <Content Include="Views\Shared\_Formulario3.cshtml" />
+    <Content Include="Views\Home\ObrigadoIndicacao.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

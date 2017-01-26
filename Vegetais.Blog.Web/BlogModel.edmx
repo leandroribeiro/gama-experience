@@ -9,6 +9,7 @@
     <EntitySet Name="ArtigoSet" EntityType="BlogModel.Store.ArtigoSet" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="AssociadoSet" EntityType="BlogModel.Store.AssociadoSet" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="UserSet" EntityType="BlogModel.Store.UserSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IndiqueUmAmigoSet" EntityType="BlogModel.Store.IndiqueUmAmigoSet" store:Type="Tables" Schema="dbo" />
   </EntityContainer>
   <EntityType Name="ArtigoSet">
     <Key>
@@ -44,6 +45,17 @@
     <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Senha" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
+  <EntityType Name="IndiqueUmAmigoSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MeuNome" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MeuEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AmigoNome" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AmigoEmail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DataDeEnvio" Type="datetime" Nullable="false" />
+  </EntityType>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -52,6 +64,7 @@
           <EntitySet Name="ArtigoSet" EntityType="BlogModel.Artigo" />
           <EntitySet Name="AssociadoSet" EntityType="BlogModel.Associado" />
           <EntitySet Name="UserSet" EntityType="BlogModel.User" />
+          <EntitySet Name="IndiqueUmAmigoSet" EntityType="BlogModel.IndiqueUmAmigo" />
         </EntityContainer>
         <EntityType Name="Artigo">
           <Key>
@@ -86,6 +99,17 @@
           <Property Name="Nome" Type="String" Nullable="false" />
           <Property Name="Login" Type="String" Nullable="false" />
           <Property Name="Senha" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IndiqueUmAmigo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MeuNome" Type="String" Nullable="false" />
+          <Property Name="MeuEmail" Type="String" Nullable="false" />
+          <Property Name="AmigoNome" Type="String" Nullable="false" />
+          <Property Name="AmigoEmail" Type="String" Nullable="false" />
+          <Property Name="DataDeEnvio" Type="DateTime" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -127,6 +151,18 @@
           <ScalarProperty Name="Nome" ColumnName="Nome" />
           <ScalarProperty Name="Login" ColumnName="Login" />
           <ScalarProperty Name="Senha" ColumnName="Senha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndiqueUmAmigoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(BlogModel.IndiqueUmAmigo)">
+        <MappingFragment StoreEntitySet="IndiqueUmAmigoSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MeuNome" ColumnName="MeuNome" />
+          <ScalarProperty Name="MeuEmail" ColumnName="MeuEmail" />
+          <ScalarProperty Name="AmigoNome" ColumnName="AmigoNome" />
+          <ScalarProperty Name="AmigoEmail" ColumnName="AmigoEmail" />
+          <ScalarProperty Name="DataDeEnvio" ColumnName="DataDeEnvio" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

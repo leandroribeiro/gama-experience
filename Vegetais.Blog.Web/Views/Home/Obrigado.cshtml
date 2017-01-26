@@ -15,11 +15,10 @@
             <h3>Indique a um Amigo</h3>
 
             <div class="comment-bottom">
-                <form>
-                    <input type="text" placeholder="Nome Completo">
-                    <input type="text" placeholder="Email">
-                    <input type="submit" value="Enviar">
-                </form>
+                @using (Html.BeginForm("IndicarAmigo", "Home"))
+                {
+                    Html.RenderPartial("_Formulario3");
+                }
             </div>
 
             <p>Deixe o nome e e-mail do seu amigo, nós avisaremos que você o indicou, muito obrigado!</p>
