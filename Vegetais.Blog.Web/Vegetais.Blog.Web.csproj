@@ -513,6 +513,8 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Artigo\Categoria.cshtml" />
+    <Content Include="Views\Shared\_Formulario.cshtml" />
+    <Content Include="Views\Shared\_Formulario2.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

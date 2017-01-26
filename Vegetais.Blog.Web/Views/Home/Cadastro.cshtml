@@ -14,9 +14,7 @@
             <div class="comment-bottom">
                 @using (Html.BeginForm("Enviar", "Home"))
                 {
-                    <input id="nome" name="nome" type="text" placeholder="Informe seu nome completo" required="required">
-                    <input id="email" name="email" type="email" placeholder="Informe um endereço de email válido" required="required">
-                    <input type="submit" value="Enviar">
+                    Html.RenderPartial("_Formulario");
                 }
             </div>
 

@@ -13,13 +13,7 @@
             <p>Deixe seu e-mail e Receba artigos sobre como fazer transmissões profissionais.</p>
             @using (Html.BeginForm("Enviar", "Home"))
             {
-                <div class="name">
-                    <input id="nome" name="nome" type="text" placeholder="Informe seu nome completo" required="required">
-                    <input id="email" name="email" type="email" placeholder="Informe um endereço de email válido" required="required">
-                </div>
-                <div class="button">
-                    <input type="submit" value="Enviar">
-                </div>
+                Html.RenderPartial("_Formulario2");
             }
             <div class="clearfix"> </div>
         </div>
