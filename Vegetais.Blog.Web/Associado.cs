@@ -19,5 +19,6 @@ namespace Vegetais.Blog.Web
         public string Email { get; set; }
         public string IP { get; set; }
         public System.DateTime HoraCadastro { get; set; }
+        public string OrigemDoCadastro { get; set; }
     }
 }

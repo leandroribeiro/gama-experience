@@ -28,15 +28,16 @@ namespace Vegetais.Blog.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Enviar(string nome, string email)
-        {
+        public ActionResult Enviar(string nome, string email, string paginaDeOrigem = "")
+        {            
             var db = new BlogModelContainer();
             var associado = new Associado()
             {
                 Email = email,
                 HoraCadastro = DateTime.Now,
                 IP = MyRequestHelper.GetIPAdress(Request),
-                Nome = nome
+                Nome = nome,
+                OrigemDoCadastro = paginaDeOrigem
             };
 
             db.AssociadoSet.Add(associado);

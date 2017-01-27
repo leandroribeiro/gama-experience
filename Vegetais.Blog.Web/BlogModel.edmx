@@ -35,6 +35,7 @@
     <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="IP" Type="nvarchar(max)" Nullable="false" />
     <Property Name="HoraCadastro" Type="datetime" Nullable="false" />
+    <Property Name="OrigemDoCadastro" Type="nvarchar(max)" Nullable="true" />
   </EntityType>
   <EntityType Name="UserSet">
     <Key>
@@ -90,6 +91,7 @@
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="IP" Type="String" Nullable="false" />
           <Property Name="HoraCadastro" Type="DateTime" Nullable="false" />
+          <Property Name="OrigemDoCadastro" Type="String" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -141,6 +143,7 @@
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="IP" ColumnName="IP" />
           <ScalarProperty Name="HoraCadastro" ColumnName="HoraCadastro" />
+          <ScalarProperty Name="OrigemDoCadastro" ColumnName="OrigemDoCadastro" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
