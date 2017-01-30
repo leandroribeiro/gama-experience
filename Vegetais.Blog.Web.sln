@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26127.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vegetais.Blog.Web", "Vegetais.Blog.Web\Vegetais.Blog.Web.csproj", "{AC363054-974A-4974-8945-EA4522AF4003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vegetais.Blog.Infrastructure", "Vegetais.Blog.Infrastructure\Vegetais.Blog.Infrastructure.csproj", "{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vegetais.Blog.Infrastructure.Data", "Vegetais.Blog.Infrastructure.Data\Vegetais.Blog.Infrastructure.Data.csproj", "{50F02918-1FBD-491C-90AC-A2F536F6DBCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,12 @@ Global
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6119976C-FA26-4EDD-A5CF-65D4577CCA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Azure|Any CPU.ActiveCfg = Release|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Azure|Any CPU.Build.0 = Release|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F02918-1FBD-491C-90AC-A2F536F6DBCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

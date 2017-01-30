@@ -7,18 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vegetais.Blog.Web
+namespace Vegetais.Blog.Infrastructure.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Associado
+    public partial class User
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Email { get; set; }
-        public string IP { get; set; }
-        public System.DateTime HoraCadastro { get; set; }
-        public string OrigemDoCadastro { get; set; }
+        public string Login { get; set; }
+        public string Senha { get; set; }
     }
 }

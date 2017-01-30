@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using Vegetais.Blog.Infrastructure;
 
-namespace Vegetais.Blog.Web
+namespace Vegetais.Blog.Infrastructure.Data
 {
     public partial class BlogModelContainer : DbContext
     {

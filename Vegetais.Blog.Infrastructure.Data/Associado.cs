@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vegetais.Blog.Web
+namespace Vegetais.Blog.Infrastructure.Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class IndiqueUmAmigo
+    public partial class Associado
     {
         public int Id { get; set; }
-        public string MeuNome { get; set; }
-        public string MeuEmail { get; set; }
-        public string AmigoNome { get; set; }
-        public string AmigoEmail { get; set; }
-        public System.DateTime DataDeEnvio { get; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string IP { get; set; }
+        public System.DateTime HoraCadastro { get; set; }
+        public string OrigemDoCadastro { get; set; }
     }
 }

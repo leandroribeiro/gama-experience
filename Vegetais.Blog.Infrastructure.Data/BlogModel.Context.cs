@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vegetais.Blog.Web
+namespace Vegetais.Blog.Infrastructure.Data
 {
     using System;
     using System.Data.Entity;
