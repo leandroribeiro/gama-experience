@@ -7,21 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Vegetais.Blog.Web
+namespace Vegetais.Blog.Infrastructure.Data
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Web.Mvc;
-
+    
     public partial class Artigo
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
         public string Imagem { get; set; }
-        [AllowHtml]
         public string Video { get; set; }
-        [AllowHtml, UIHint("tinymce_jquery_full")]
         public string Conteudo { get; set; }
         public string Permalink { get; set; }
         public bool SoParaAssinantes { get; set; }

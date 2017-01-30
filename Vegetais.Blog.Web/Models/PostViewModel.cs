@@ -2,6 +2,7 @@ using System;
 using System.Web;
 using System.Web.Mvc;
 using Vegetais.Blog.Infrastructure;
+using Vegetais.Blog.Infrastructure.Data;
 
 namespace Vegetais.Blog.Web.Models
 {

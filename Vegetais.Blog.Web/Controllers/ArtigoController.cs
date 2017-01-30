@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vegetais.Blog.Infrastructure;
+using Vegetais.Blog.Infrastructure.Data;
 using Vegetais.Blog.Web.Models;
 
 namespace Vegetais.Blog.Web.Controllers
