@@ -34,7 +34,7 @@
     min-height: 180px;
 }
 
-.comment-bottom input[type="text"], .comment-bottom textarea {
+.comment-bottom input[type="text"], .comment-bottom input[type="email"], .comment-bottom textarea {
     color: #6e6767;
 }
 

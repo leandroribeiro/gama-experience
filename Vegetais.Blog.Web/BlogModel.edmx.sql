@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 01/24/2017 22:52:40
--- Generated from EDMX file: C:\Projetos\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
+-- Date Created: 01/27/2017 16:21:23
+-- Generated from EDMX file: C:\PROJETOS\vegetais-blog\Vegetais.Blog.Web\BlogModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -27,6 +27,12 @@ IF OBJECT_ID(N'[dbo].[ArtigoSet]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[AssociadoSet]', 'U') IS NOT NULL
     DROP TABLE [dbo].[AssociadoSet];
+GO
+IF OBJECT_ID(N'[dbo].[UserSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[UserSet];
+GO
+IF OBJECT_ID(N'[dbo].[IndiqueUmAmigoSet]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[IndiqueUmAmigoSet];
 GO
 
 -- --------------------------------------------------
@@ -54,7 +60,8 @@ CREATE TABLE [dbo].[AssociadoSet] (
     [Nome] nvarchar(max)  NOT NULL,
     [Email] nvarchar(max)  NOT NULL,
     [IP] nvarchar(max)  NOT NULL,
-    [HoraCadastro] datetime  NOT NULL
+    [HoraCadastro] datetime  NOT NULL,
+    [OrigemDoCadastro] nvarchar(max)  NULL
 );
 GO
 
@@ -64,6 +71,17 @@ CREATE TABLE [dbo].[UserSet] (
     [Nome] nvarchar(max)  NOT NULL,
     [Login] nvarchar(max)  NOT NULL,
     [Senha] nvarchar(max)  NOT NULL
+);
+GO
+
+-- Creating table 'IndiqueUmAmigoSet'
+CREATE TABLE [dbo].[IndiqueUmAmigoSet] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [MeuNome] nvarchar(max)  NOT NULL,
+    [MeuEmail] nvarchar(max)  NOT NULL,
+    [AmigoNome] nvarchar(max)  NOT NULL,
+    [AmigoEmail] nvarchar(max)  NOT NULL,
+    [DataDeEnvio] datetime  NOT NULL
 );
 GO
 
@@ -86,6 +104,12 @@ GO
 -- Creating primary key on [Id] in table 'UserSet'
 ALTER TABLE [dbo].[UserSet]
 ADD CONSTRAINT [PK_UserSet]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'IndiqueUmAmigoSet'
+ALTER TABLE [dbo].[IndiqueUmAmigoSet]
+ADD CONSTRAINT [PK_IndiqueUmAmigoSet]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 

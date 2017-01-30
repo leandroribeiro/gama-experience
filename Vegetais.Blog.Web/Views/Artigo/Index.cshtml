@@ -28,6 +28,18 @@
         </div>
     </div>
 
+    <!--Formulário dentro do artigo-->
+    <div class="comment">
+        <h3>Gostou? Deixe seu e-mail e receba novidades!</h3>
+
+        <div class="comment-bottom">
+            @using (Html.BeginForm("Enviar", "Home"))
+            {
+                Html.RenderPartial("_Formulario");
+            }
+        </div>
+    </div>
+
     <!-- comentários -->
     @*<div class="comment-top">
             <h2>Comment</h2>

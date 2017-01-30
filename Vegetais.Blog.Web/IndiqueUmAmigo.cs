@@ -12,13 +12,13 @@ namespace Vegetais.Blog.Web
     using System;
     using System.Collections.Generic;
     
-    public partial class Associado
+    public partial class IndiqueUmAmigo
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string IP { get; set; }
-        public System.DateTime HoraCadastro { get; set; }
-        public string OrigemDoCadastro { get; set; }
+        public string MeuNome { get; set; }
+        public string MeuEmail { get; set; }
+        public string AmigoNome { get; set; }
+        public string AmigoEmail { get; set; }
+        public System.DateTime DataDeEnvio { get; set; }
     }
 }

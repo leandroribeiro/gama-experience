@@ -28,21 +28,32 @@ namespace Vegetais.Blog.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Enviar(string nome, string email)
-        {
+        public ActionResult Enviar(string nome, string email, string paginaDeOrigem = "")
+        {            
             var db = new BlogModelContainer();
             var associado = new Associado()
             {
                 Email = email,
                 HoraCadastro = DateTime.Now,
                 IP = MyRequestHelper.GetIPAdress(Request),
-                Nome = nome
+                Nome = nome,
+                OrigemDoCadastro = paginaDeOrigem
             };
-            
+
             db.AssociadoSet.Add(associado);
             db.SaveChanges();
 
+            ArmazenarCookie(nome, email);
+
             return View("Obrigado");
+        }
+
+        private void ArmazenarCookie(string nome, string email)
+        {
+            var identificador = Request.AnonymousID;
+            Response.Cookies[identificador]["nome"] = nome;
+            Response.Cookies[identificador]["email"] = email;
+            Response.Cookies[identificador].Expires = DateTime.Now.AddYears(1);
         }
 
         public ActionResult Sobre()
@@ -77,6 +88,25 @@ namespace Vegetais.Blog.Web.Controllers
         public ActionResult IndicarAmigo()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult IndicarAmigo(string nome, string email, string nomeamigo, string emailamigo)
+        {
+            var db = new BlogModelContainer();
+            var indicacao = new IndiqueUmAmigo()
+            {
+                MeuNome = nome,
+                MeuEmail = email,
+                AmigoNome = nomeamigo,
+                AmigoEmail = emailamigo,
+                DataDeEnvio = DateTime.Now
+            };
+
+            db.IndiqueUmAmigoSet.Add(indicacao);
+            db.SaveChanges();
+
+            return View("ObrigadoIndicacao");
         }
     }
 

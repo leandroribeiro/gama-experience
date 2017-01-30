@@ -1,53 +1,48 @@
 ﻿
 @{
-    ViewBag.Title = "Transmissao";
+    ViewBag.Title = "Transmissão";
 }
 
-        <div class="technology-1">
-            <div class="business">
-                <div class="business-top">
-                    <h2>Crie Conteúdo Online com Qualidade!</h2>
-                    <p>Se você gosta de se expor e criar relacionamentos através das redes e das mais diversas mídias hoje existentes, criar ou fortalecer sua marca, ou simplesmente disseminar conteúdo, você está no lugar certo.</p>
-                    <p>E este blog nasceu com o intuito de esclarecer tudo o que se refere ao universo das transmissões ao vivo profissionais por meio de dicas, tutoriais, testes e indicações das ferramentas mais apropriadas para cada situação.</p>
-                    <p>Se você também se interessa pelo assunto e que aprender mais, se liga no blog.</p>
+<div class="technology-1">
+    <div class="business">
+        <div class="business-top">
+            <h2>Crie Conteúdo Online com Qualidade!</h2>
+            <p>Se você gosta de se expor e criar relacionamentos através das redes e das mais diversas mídias hoje existentes, criar ou fortalecer sua marca, ou simplesmente disseminar conteúdo, você está no lugar certo.</p>
+            <p>E este blog nasceu com o intuito de esclarecer tudo o que se refere ao universo das transmissões ao vivo profissionais por meio de dicas, tutoriais, testes e indicações das ferramentas mais apropriadas para cada situação.</p>
+            <p>Se você também se interessa pelo assunto e que aprender mais, se liga no blog.</p>
 
-                    <div class="business-bottom">
-                        <h4>Ideal para quem:</h4><br>
+            <div class="business-bottom">
+                <h4>Ideal para quem:</h4><br>
 
-                        <div class="col-md-4 business-left">
+                <div class="col-md-4 business-left">
+                    <h3 class="small-size">Quer Criar Audiência</h3>
+                    <p>Trabalhe corretamente seus canais de comunicação para abranger um maior público com eficiência.</p>
 
-
-                            <h3 class="small-size">Quer Criar Audiência</h3>
-                            <p>Trabalhe corretamente seus canais de comunicação para abranger um maior público com eficiência.</p>
-
-                        </div>
-                        <div class="col-md-4 business-left">
-                            <h3 class="small-size">Compreender o Público</h3>
-                            <p>Utilize das ferramentas digitais para atrair e analisar o comportamento do seu público.</p>
-
-                        </div>
-                        <div class="col-md-4 business-left">
-                            <h3 class="small-size">Comunicar-se com Eficiência</h3>
-                            <p>Aprimore a comunicação dentro do seu negócio, aprenda truques para fazer transmissões profissionais a baixo custo.</p>
-
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
                 </div>
-                <div class="business-bottom">
+                <div class="col-md-4 business-left">
+                    <h3 class="small-size">Compreender o Público</h3>
+                    <p>Utilize das ferramentas digitais para atrair e analisar o comportamento do seu público.</p>
 
-                    <div class=" comment-bottom">
-                        <h3>Deixe seu e-mail e Mantenha-se Informado Sobre Engajamento e Transmissões.</h3>
-                        <form>
-                            <input type="text" placeholder="Nome Completo">
-                            <input type="text" placeholder="Email">
-                            <input type="submit" value="Enviar">
-                        </form>
-                    </div>
-
-
-                    <div class="clearfix"></div>
                 </div>
+                <div class="col-md-4 business-left">
+                    <h3 class="small-size">Comunicar-se com Eficiência</h3>
+                    <p>Aprimore a comunicação dentro do seu negócio, aprenda truques para fazer transmissões profissionais a baixo custo.</p>
+
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
+        <div class="business-bottom">
 
+            <div class="comment-bottom">
+                <h3>Deixe seu e-mail e Mantenha-se Informado Sobre Engajamento e Transmissões.</h3>
+                @using (Html.BeginForm("Enviar", "Home"))
+                {
+                    Html.RenderPartial("_Formulario");
+                }
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

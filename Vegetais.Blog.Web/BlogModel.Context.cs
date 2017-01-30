@@ -28,5 +28,6 @@ namespace Vegetais.Blog.Web
         public virtual DbSet<Artigo> ArtigoSet { get; set; }
         public virtual DbSet<Associado> AssociadoSet { get; set; }
         public virtual DbSet<User> UserSet { get; set; }
+        public virtual DbSet<IndiqueUmAmigo> IndiqueUmAmigoSet { get; set; }
     }
 }

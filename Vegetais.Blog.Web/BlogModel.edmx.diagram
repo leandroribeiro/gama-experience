@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="BlogModel.Artigo" Width="1.75" PointX="1.625" PointY="1.375" />
         <EntityTypeShape EntityType="BlogModel.Associado" Width="1.5" PointX="4.75" PointY="1.375" />
         <EntityTypeShape EntityType="BlogModel.User" Width="1.5" PointX="7" PointY="1.125" />
+        <EntityTypeShape EntityType="BlogModel.IndiqueUmAmigo" Width="1.5" PointX="9.125" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

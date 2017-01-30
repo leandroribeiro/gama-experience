@@ -199,6 +199,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IndiqueUmAmigo.cs">
+      <DependentUpon>BlogModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MainLayoutViewModel.cs" />
     <Compile Include="Models\PostViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,6 +244,31 @@
     <Content Include="images\9.jpg" />
     <Content Include="images\banner.jpg" />
     <Content Include="images\banner1.jpg" />
+    <Content Include="images\favicon\android-icon-144x144.png" />
+    <Content Include="images\favicon\android-icon-192x192.png" />
+    <Content Include="images\favicon\android-icon-36x36.png" />
+    <Content Include="images\favicon\android-icon-48x48.png" />
+    <Content Include="images\favicon\android-icon-72x72.png" />
+    <Content Include="images\favicon\android-icon-96x96.png" />
+    <Content Include="images\favicon\apple-icon-114x114.png" />
+    <Content Include="images\favicon\apple-icon-120x120.png" />
+    <Content Include="images\favicon\apple-icon-144x144.png" />
+    <Content Include="images\favicon\apple-icon-152x152.png" />
+    <Content Include="images\favicon\apple-icon-180x180.png" />
+    <Content Include="images\favicon\apple-icon-57x57.png" />
+    <Content Include="images\favicon\apple-icon-60x60.png" />
+    <Content Include="images\favicon\apple-icon-72x72.png" />
+    <Content Include="images\favicon\apple-icon-76x76.png" />
+    <Content Include="images\favicon\apple-icon-precomposed.png" />
+    <Content Include="images\favicon\apple-icon.png" />
+    <Content Include="images\favicon\favicon-16x16.png" />
+    <Content Include="images\favicon\favicon-32x32.png" />
+    <Content Include="images\favicon\favicon-96x96.png" />
+    <Content Include="images\favicon\favicon.ico" />
+    <Content Include="images\favicon\ms-icon-144x144.png" />
+    <Content Include="images\favicon\ms-icon-150x150.png" />
+    <Content Include="images\favicon\ms-icon-310x310.png" />
+    <Content Include="images\favicon\ms-icon-70x70.png" />
     <Content Include="images\iconmonstr-vimeo-4-icon-32.png" />
     <Content Include="images\iconmonstr-youtube-4-icon-32.png" />
     <Content Include="images\logo152.png" />
@@ -278,6 +306,7 @@
     <Content Include="Areas\Admin\Views\Associado\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Associado\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Associado\Index.cshtml" />
+    <Content Include="images\favicon\manifest.json" />
     <None Include="Properties\PublishProfiles\vegetais - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\vegetais - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -487,6 +516,10 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Artigo\Categoria.cshtml" />
+    <Content Include="Views\Shared\_Formulario.cshtml" />
+    <Content Include="Views\Shared\_Formulario2.cshtml" />
+    <Content Include="Views\Shared\_Formulario3.cshtml" />
+    <Content Include="Views\Home\ObrigadoIndicacao.cshtml" />
     <None Include="Web.Azure.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
