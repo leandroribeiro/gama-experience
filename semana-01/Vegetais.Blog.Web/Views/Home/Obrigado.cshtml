@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Obrigado";
+}
+
+<div class="technology-1">
+    <div class="business">
+
+        <div class="comment">
+            <h3>Obrigado!</h3>
+            <p>Muito obrigado por cadastrar-se ou recomendar nossa ajuda à alguém que se interesse pelo assunto!</p>
+        </div>
+
+        <div class="comment">
+            <h3>Nos indique a um Amigo</h3>
+
+            <div class="comment-bottom">
+                @using (Html.BeginForm("IndicarAmigo", "Home"))
+                {
+                    Html.RenderPartial("_Formulario3");
+                }
+            </div>
+
+            <p>Deixe o nome e e-mail do seu amigo, nós avisaremos que você o indicou, muito obrigado!</p>
+        </div>
+        <br>
+        <br>
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Indique um amigo";
+}
+
+<div class="technology-1">
+    <div class="business">
+
+        <div class="comment">
+            <h3>Indique um Amigo.</h3>
+            <p></p>
+
+            <div class="comment-bottom">
+                @using (Html.BeginForm("IndicarAmigo", "Home"))
+                {
+                    Html.RenderPartial("_Formulario3");
+                }
+            </div>
+
+            <p>Deixe o nome e e-mail do seu amigo, nós avisaremos que você o indicou, muito obrigado!</p>
+        </div>
+        <br><br>
+    </div>
+</div>
+
