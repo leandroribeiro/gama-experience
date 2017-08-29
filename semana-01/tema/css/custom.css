@@ -1,0 +1,93 @@
+/*-- ajustes --*/
+
+.header-top {
+    padding: .5em 0;
+}
+
+.social {
+    margin-top: 0.9em;
+}
+
+.search {
+    margin-top: 0.9em;
+}
+
+.banner p {
+    color: rgb(234, 234, 234);
+}
+
+.banner a {
+    background: rgb(40, 117, 201);
+}
+
+.copyright {
+    background: #2875c9;
+}
+
+.copyright p {
+
+    text-align: left;
+    color: #fff;
+}
+
+.banner1 {
+    min-height: 180px;
+}
+
+.comment-bottom input[type="text"], .comment-bottom textarea {
+    color: #6e6767;
+}
+
+.design-top {
+    margin-top: 2em;
+}
+
+
+
+/*-- header --*/
+
+
+img.logo-home {
+    max-width: 250px;
+}
+
+.banner > .container > a.destaque {
+    background-color: #fff;
+    color: #2875c9;
+}
+
+
+/*-- páginas --*/
+
+input.email {
+    margin-top: 10px;
+}
+
+h3.small-size {
+    font-size: 21px;
+}
+
+
+/*-- mobile --*/
+
+@media screen and (max-width: 768px) {
+.header-top {
+    
+}
+
+.social {
+    
+    text-align: center;
+}
+
+.search {
+    
+    display: none;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+}
